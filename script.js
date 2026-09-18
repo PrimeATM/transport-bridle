@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-placeholder]').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();alert('This button is ready to connect to your store/cart when the final selling details are added.')}));
