@@ -1,52 +1,41 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Transport Bridle | Moto Anchors</title>
-<meta name="description" content="Transport Bridle Moto Anchors — secure, simple motorcycle tie-down security.">
+<meta name="description" content="Transport Bridle creates a simple, secure motorcycle tie-down point while keeping setup easy to understand.">
 <style>
 *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111}a{text-decoration:none;color:inherit}
-.nav{height:72px;background:#0b0b0c;color:#fff;display:flex;align-items:center;padding:0 4%;position:relative;z-index:5}
-.logo{width:205px;height:118px;object-fit:contain;align-self:flex-start;position:relative;z-index:6}
-.links{display:flex;align-items:center;justify-content:center;gap:50px;flex:1;height:100%;font-size:16px;text-transform:uppercase}
-.links a{height:100%;display:flex;align-items:center;border-bottom:4px solid transparent;padding-top:4px}
-.links a.active,.links a:hover{font-weight:700;border-bottom-color:#ed1c24}
-.nav-icons{display:flex;gap:30px;align-items:center;font-size:29px}
-.menu{display:none;background:none;border:0;padding:10px}.menu span{display:block;width:28px;height:3px;background:#fff;margin:5px}
-.hero{position:relative;width:100%;height:min(47.1vw,724px);min-height:460px;background:url("assets/approved-home-hero.jpg") center center/cover no-repeat}
-.shop-overlay{position:absolute;left:21.2%;bottom:11.8%;width:21.5%;height:9%;min-height:56px;display:block;border-radius:6px}
+.hero{position:relative;width:100%;aspect-ratio:1536/795;background:url("assets/home-hero-final.jpg") center top/cover no-repeat}
+.home-link,.shop-link,.how-link,.gallery-link,.faq-link,.contact-link,.shop-button{position:absolute;display:block}
+.home-link{left:26.5%;top:0;width:6.5%;height:9%}.shop-link{left:34%;top:0;width:5%;height:9%}.how-link{left:40%;top:0;width:11%;height:9%}
+.gallery-link{left:53%;top:0;width:7%;height:9%}.faq-link{left:61%;top:0;width:5%;height:9%}.contact-link{left:67%;top:0;width:8%;height:9%}
+.shop-button{left:4.6%;top:71.2%;width:23.7%;height:9%}
 .features{max-width:1040px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);padding:44px 20px 62px}
-.feature{display:flex;align-items:center;gap:18px;padding:0 40px;border-right:1px solid #cfcfcf}
-.feature:last-child{border-right:0}.ico{font-size:42px;color:#e20d13;font-weight:900;width:58px;text-align:center}
-.feature h3{font-size:22px;margin:0 0 5px;text-transform:uppercase}.feature p{font-size:17px;line-height:1.25;color:#666;margin:0}
-@media(max-width:850px){
- .nav{min-height:74px;height:74px;padding:0 16px;justify-content:space-between}.logo{width:145px;height:92px}
- .menu{display:block}.nav-icons{display:none}.links{display:none;position:absolute;top:74px;left:0;right:0;background:#0b0b0c;height:auto;padding:10px 18px 18px}
- .links.open{display:flex;flex-direction:column;gap:0;align-items:stretch}.links a{padding:15px 4px;border-bottom:1px solid #292929}
- .hero{height:61vw;min-height:300px;background-size:cover;background-position:center}
- .shop-overlay{left:21%;bottom:12%;width:22%;min-height:38px}
- .features{grid-template-columns:1fr;padding:18px 22px 35px}.feature{border-right:0;border-bottom:1px solid #ddd;padding:22px 10px}.feature:last-child{border-bottom:0}
+.feature{display:flex;align-items:center;gap:18px;padding:0 40px;border-right:1px solid #ccc}.feature:last-child{border-right:0}
+.ico{font-size:42px;color:#e20d13;font-weight:900;width:58px;text-align:center}.feature h3{font-size:22px;margin:0 0 5px;text-transform:uppercase}.feature p{font-size:17px;line-height:1.25;color:#666;margin:0}
+.mobile-nav{display:none}
+@media(max-width:760px){
+ .hero{aspect-ratio:auto;height:69vw;min-height:275px;background-size:cover;background-position:center top}
+ .home-link,.shop-link,.how-link,.gallery-link,.faq-link,.contact-link{display:none}
+ .shop-button{left:4.5%;top:71%;width:24%;height:10%}
+ .features{grid-template-columns:1fr;padding:15px 22px 35px}.feature{border-right:0;border-bottom:1px solid #ddd;padding:22px 8px}.feature:last-child{border-bottom:0}
+ .feature h3{font-size:20px}
 }
-@media(max-width:520px){.hero{height:67vw;min-height:255px}.shop-overlay{min-height:30px}.feature h3{font-size:20px}}
-</style>
-</head>
+</style></head>
 <body>
-<nav class="nav">
-<a href="index.html"><img class="logo" src="assets/header-logo.jpg" alt="Transport Bridle Moto Anchors"></a>
-<button class="menu" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-<div class="links" id="navlinks">
-<a class="active" href="index.html">Home</a><a href="shop.html">Shop</a><a href="how-it-works.html">How It Works</a><a href="gallery.html">Gallery</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
-</div>
-<div class="nav-icons"><span>⌕</span><a href="shop.html">🛒</a></div>
-</nav>
-<section class="hero"><a class="shop-overlay" href="shop.html" aria-label="Shop Now"></a></section>
+<section class="hero">
+<a class="home-link" href="index.html" aria-label="Home"></a>
+<a class="shop-link" href="shop.html" aria-label="Shop"></a>
+<a class="how-link" href="how-it-works.html" aria-label="How It Works"></a>
+<a class="gallery-link" href="gallery.html" aria-label="Gallery"></a>
+<a class="faq-link" href="faq.html" aria-label="FAQ"></a>
+<a class="contact-link" href="contact.html" aria-label="Contact"></a>
+<a class="shop-button" href="shop.html" aria-label="Shop Now"></a>
+</section>
 <section class="features">
 <div class="feature"><div class="ico">✓</div><div><h3>Secure</h3><p>Confidence on<br>Every Ride.</p></div></div>
 <div class="feature"><div class="ico">⚙</div><div><h3>Simple</h3><p>Quick and<br>Easy Setup.</p></div></div>
 <div class="feature"><div class="ico">🔗</div><div><h3>Reliable</h3><p>Built for<br>Real Riders.</p></div></div>
 </section>
-<script>
-const b=document.querySelector('.menu'),m=document.getElementById('navlinks');b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
-</script>
 </body></html>
