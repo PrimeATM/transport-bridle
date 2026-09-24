@@ -4,82 +4,49 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Transport Bridle | Moto Anchors</title>
-<meta name="description" content="Transport Bridle Moto Anchors — simple, secure motorcycle tie-down setup built for riders.">
+<meta name="description" content="Transport Bridle Moto Anchors — secure, simple motorcycle tie-down security.">
 <style>
-*{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#111;background:#fff}
-a{text-decoration:none;color:inherit}
-.nav{height:82px;background:#0c0c0d;color:#fff;display:flex;align-items:center;padding:0 4vw;gap:36px;position:relative;z-index:10}
-.nav-logo img{width:190px;max-height:76px;object-fit:contain;display:block}
-.links{display:flex;align-items:center;justify-content:center;gap:38px;flex:1;font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.4px}
-.links a{padding:31px 0 25px;border-bottom:4px solid transparent}
-.links a.active,.links a:hover{border-color:#e20d13}
-.icons{display:flex;gap:24px;font-size:27px;align-items:center}
-.menu-toggle{display:none;background:none;border:0;padding:10px;cursor:pointer}
-.menu-toggle span{display:block;width:28px;height:3px;background:#fff;margin:5px 0;border-radius:2px}
-.hero{min-height:690px;display:grid;grid-template-columns:52% 48%;background:#111;overflow:hidden}
-.hero-copy{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:50px 5vw;background:radial-gradient(circle at 45% 40%,#292929 0,#111 48%,#080808 100%)}
-.hero-logo{width:min(690px,100%);filter:drop-shadow(0 14px 16px rgba(0,0,0,.55));mix-blend-mode:screen}
-.shop-btn{margin-top:26px;background:#e31318;color:#fff;padding:18px 52px;border-radius:5px;font-size:24px;font-weight:800;letter-spacing:.5px;box-shadow:0 7px 20px rgba(0,0,0,.25)}
-.shop-btn:hover{background:#c70d12}
-.hero-photo{background:url('assets/transport-bridle-hero.jpg') center center/cover no-repeat;min-height:690px}
-.features{display:grid;grid-template-columns:repeat(3,1fr);max-width:1050px;margin:auto;padding:54px 20px 64px}
-.feature{display:flex;align-items:center;gap:20px;padding:0 45px;border-right:1px solid #ccc}
-.feature:last-child{border-right:0}
-.icon{width:58px;height:58px;min-width:58px;border:4px solid #e31318;color:#e31318;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:29px;font-weight:900}
-.feature h3{margin:0 0 4px;font-size:22px;text-transform:uppercase}
-.feature p{margin:0;color:#666;font-size:17px;line-height:1.25}
-@media(max-width:900px){
- .nav{height:auto;min-height:74px;padding:5px 18px;justify-content:space-between}
- .nav-logo img{width:145px;max-height:68px}.menu-toggle{display:block}.icons{display:none}
- .links{display:none;position:absolute;top:100%;left:0;right:0;background:#0c0c0d;padding:10px 20px 18px;gap:0}
- .links.open{display:flex;flex-direction:column;align-items:stretch}
- .links a{padding:14px 4px;border-bottom:1px solid #292929}
- .hero{grid-template-columns:1fr;min-height:0}
- .hero-copy{padding:40px 22px 34px}.hero-logo{max-width:560px}.shop-btn{font-size:20px;padding:16px 38px}
- .hero-photo{min-height:420px;background-position:center}
- .features{grid-template-columns:1fr;padding:28px 22px 42px}
- .feature{border-right:0;border-bottom:1px solid #ddd;padding:24px 8px}
- .feature:last-child{border-bottom:0}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111}a{text-decoration:none;color:inherit}
+.nav{height:72px;background:#0b0b0c;color:#fff;display:flex;align-items:center;padding:0 4%;position:relative;z-index:5}
+.logo{width:205px;height:118px;object-fit:contain;align-self:flex-start;position:relative;z-index:6}
+.links{display:flex;align-items:center;justify-content:center;gap:50px;flex:1;height:100%;font-size:16px;text-transform:uppercase}
+.links a{height:100%;display:flex;align-items:center;border-bottom:4px solid transparent;padding-top:4px}
+.links a.active,.links a:hover{font-weight:700;border-bottom-color:#ed1c24}
+.nav-icons{display:flex;gap:30px;align-items:center;font-size:29px}
+.menu{display:none;background:none;border:0;padding:10px}.menu span{display:block;width:28px;height:3px;background:#fff;margin:5px}
+.hero{position:relative;width:100%;height:min(47.1vw,724px);min-height:460px;background:url("assets/approved-home-hero.jpg") center center/cover no-repeat}
+.shop-overlay{position:absolute;left:21.2%;bottom:11.8%;width:21.5%;height:9%;min-height:56px;display:block;border-radius:6px}
+.features{max-width:1040px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);padding:44px 20px 62px}
+.feature{display:flex;align-items:center;gap:18px;padding:0 40px;border-right:1px solid #cfcfcf}
+.feature:last-child{border-right:0}.ico{font-size:42px;color:#e20d13;font-weight:900;width:58px;text-align:center}
+.feature h3{font-size:22px;margin:0 0 5px;text-transform:uppercase}.feature p{font-size:17px;line-height:1.25;color:#666;margin:0}
+@media(max-width:850px){
+ .nav{min-height:74px;height:74px;padding:0 16px;justify-content:space-between}.logo{width:145px;height:92px}
+ .menu{display:block}.nav-icons{display:none}.links{display:none;position:absolute;top:74px;left:0;right:0;background:#0b0b0c;height:auto;padding:10px 18px 18px}
+ .links.open{display:flex;flex-direction:column;gap:0;align-items:stretch}.links a{padding:15px 4px;border-bottom:1px solid #292929}
+ .hero{height:61vw;min-height:300px;background-size:cover;background-position:center}
+ .shop-overlay{left:21%;bottom:12%;width:22%;min-height:38px}
+ .features{grid-template-columns:1fr;padding:18px 22px 35px}.feature{border-right:0;border-bottom:1px solid #ddd;padding:22px 10px}.feature:last-child{border-bottom:0}
 }
-@media(max-width:520px){.hero-photo{min-height:330px}.nav-logo img{width:125px}.hero-copy{padding-top:30px}}
+@media(max-width:520px){.hero{height:67vw;min-height:255px}.shop-overlay{min-height:30px}.feature h3{font-size:20px}}
 </style>
 </head>
 <body>
 <nav class="nav">
-  <a class="nav-logo" href="index.html"><img src="assets/transport-bridle-logo.jpg" alt="Transport Bridle Moto Anchors"></a>
-  <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  <div class="links" id="main-nav">
-    <a class="active" href="index.html">Home</a>
-    <a href="shop.html">Shop</a>
-    <a href="how-it-works.html">How It Works</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <div class="icons"><span title="Search">⌕</span><a href="shop.html" title="Shop">🛒</a></div>
+<a href="index.html"><img class="logo" src="assets/header-logo.jpg" alt="Transport Bridle Moto Anchors"></a>
+<button class="menu" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<div class="links" id="navlinks">
+<a class="active" href="index.html">Home</a><a href="shop.html">Shop</a><a href="how-it-works.html">How It Works</a><a href="gallery.html">Gallery</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
+</div>
+<div class="nav-icons"><span>⌕</span><a href="shop.html">🛒</a></div>
 </nav>
-
-<main>
-<section class="hero">
-  <div class="hero-copy">
-    <img class="hero-logo" src="assets/transport-bridle-logo.jpg" alt="Transport Bridle Moto Anchors">
-    <a class="shop-btn" href="shop.html">SHOP NOW ›</a>
-  </div>
-  <div class="hero-photo" role="img" aria-label="Motorcycle secured for transport"></div>
-</section>
-
+<section class="hero"><a class="shop-overlay" href="shop.html" aria-label="Shop Now"></a></section>
 <section class="features">
-  <div class="feature"><div class="icon">✓</div><div><h3>Secure</h3><p>Confidence on<br>Every Ride.</p></div></div>
-  <div class="feature"><div class="icon">⚙</div><div><h3>Simple</h3><p>Quick and<br>Easy Setup.</p></div></div>
-  <div class="feature"><div class="icon">↗</div><div><h3>Reliable</h3><p>Built for<br>Real Riders.</p></div></div>
+<div class="feature"><div class="ico">✓</div><div><h3>Secure</h3><p>Confidence on<br>Every Ride.</p></div></div>
+<div class="feature"><div class="ico">⚙</div><div><h3>Simple</h3><p>Quick and<br>Easy Setup.</p></div></div>
+<div class="feature"><div class="ico">🔗</div><div><h3>Reliable</h3><p>Built for<br>Real Riders.</p></div></div>
 </section>
-</main>
-
 <script>
-const b=document.querySelector('.menu-toggle'),m=document.getElementById('main-nav');
-b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o));});
-m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded','false');}));
+const b=document.querySelector('.menu'),m=document.getElementById('navlinks');b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
 </script>
-</body>
-</html>
+</body></html>
